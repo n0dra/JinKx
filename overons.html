@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/438e23a8f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+
+    <title>Jinkx Tattoo</title>
+
+</head>
+<body>
+    <header class="nav">
+        <div class="navbar">
+            <div class="logo"><a href="">Jinkx Tattoo</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="overons.html">Over Ons</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+     </header>
+
+    
+  <header class="showcase">
+    <div class="content">
+        <img src="images/logo1.png" class="logo" alt="Jinkx Tattoo">
+        <div class="title">
+            Over Ons
+        </div>
+        <div class="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, deserunt!
+        </div>
+    </div>
+  </header> 
+  
+  <header>
+    <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="overons.html">Over Ons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" class="action_btn">Plan Afspraak</a></li>
+    </div>
+   </header>
+
+   <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+     dropDownMenu.classList.toggle('open')
+     const isOpen = dropDownMenu.classList.contains('open')
+
+     toggleBtnIcon.classList = isOpen
+     ? 'fa-solid fa-xmark'
+     : 'fa-solid fa-bars'
+    }
+   </script>
+ 
+
+
+ <footer class="center bg-dark">
+    <p>nodra web design &copy; 2023</p>
+ </footer>
+
+ </footer>
+</body>
+
+</html>
